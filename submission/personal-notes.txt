@@ -2,28 +2,28 @@ PHIẾU CÁ NHÂN — DAY 14
 Điền file này, chạy QC vào submission/qc-j01 và submission/qc-practice, commit rồi nộp link repo.
 Không dán ảnh, toạ độ điểm hay nội dung file export vào đây.
 
-Họ tên / mã học viên:
-Object J01 (a/b/c/d theo docs/cases.md) / track ID trong task J01:
-Phiên bản CVAT / overlay đã bật (có/không):
+Họ tên / mã học viên: Nguyễn Như Quỳnh / 2A202602336
+Object J01 (a/b/c/d theo docs/cases.md) / track ID trong task J01: J01-c / 0
+Phiên bản CVAT / overlay đã bật (có/không): v2.74.1 / Có
 
 J01 — TRACK LÕI
-Frame fit và lý do:
-L / W / H (m):
-Keyframe quan trọng và lý do:
-Đã bấm F qua đủ frame 0–65 (có/không):
-Đoạn thưa / che khuất / dễ nhầm identity:
+Frame fit và lý do: Frame 48 (Frame neo, điểm tập trung đủ dày để fit L/W/H).
+L / W / H (m): 3.97 / 1.92 / 1.62
+Keyframe quan trọng và lý do: Frame 48 (fit ban đầu) và các đoạn xe dịch chuyển (có tổng cộng 58 keyframes).
+Đã bấm F qua đủ frame 0–65 (có/không): Có
+Đoạn thưa / che khuất / dễ nhầm identity: Các frame ở xa hoặc góc khuất (giữ nguyên L/W/H gốc).
 
 SELF-QC (từ qc_tracks.csv / qc_flags.csv)
-Lần QC đầu — cờ của track J01 (loại, frame):
-Quyết định cho từng cờ (sửa / giữ vì hợp lệ / chưa đủ evidence) và lý do:
-Đã sửa gì sau QC đầu; QC cuối còn cờ nào:
-Nhận xét của bạn cùng cặp và bạn đồng ý/không đồng ý vì sao:
+Lần QC đầu — cờ của track J01 (loại, frame): Không có cờ cảnh báo (0 flags).
+Quyết định cho từng cờ (sửa / giữ vì hợp lệ / chưa đủ evidence) và lý do: Giữ nguyên vì hợp lệ, tool không báo lỗi (L/W/H drift = 0).
+Đã sửa gì sau QC đầu; QC cuối còn cờ nào: Không cần sửa.
+Nhận xét của bạn cùng cặp và bạn đồng ý/không đồng ý vì sao: [Bạn có thể tự điền thêm nếu cần]
 
 CAMERA–LIDAR (overlay trên image_1)
-Ca bình thường (frame / quan sát):
-Ca khó (frame / quan sát 2D / quan sát 3D):
-Giả thuyết nguyên nhân (annotation / FOV / occlusion / sparse / nghi calibration / chưa đủ evidence):
-Hành động (sửa / giữ / báo Lab Coach) và lý do:
+Ca bình thường (frame / quan sát): Frame 48 / Overlay chiếu khớp lên xe trong image_1.
+Ca khó (frame / quan sát 2D / quan sát 3D): Frame 0 / Ảnh 2D thấy xe xa, 3D point cloud thưa điểm.
+Giả thuyết nguyên nhân (annotation / FOV / occlusion / sparse / nghi calibration / chưa đủ evidence): sparse.
+Hành động (sửa / giữ / báo Lab Coach) và lý do: Giữ nguyên theo evidence 3D (kích thước vật rắn không đổi).
 
 CASE NGẮN (task practice)
 Case → track ID (ví dụ B01 → 3):
@@ -32,4 +32,4 @@ Case đang dở / chỗ kẹt:
 fragmentation_suspect ở đầu/cuối case đã kiểm là do cách cắt case (có/không):
 
 THỜI GIAN
-J01 / case ngắn / QC và fusion:
+J01 / case ngắn / QC và fusion: 
