@@ -2,21 +2,21 @@ PHIẾU CÁ NHÂN — DAY 14
 Điền file này, chạy QC vào submission/qc-j01 và submission/qc-practice, commit rồi nộp link repo.
 Không dán ảnh, toạ độ điểm hay nội dung file export vào đây.
 
-Họ tên / mã học viên: Nguyễn Như Quỳnh / 2A202602336
+Họ tên / mã học viên: Nguyen Nhu Quynh / 2A202602336
 Object J01 (a/b/c/d theo docs/cases.md) / track ID trong task J01: J01-c / 0
 Phiên bản CVAT / overlay đã bật (có/không): v2.74.1 / Có
 
 J01 — TRACK LÕI
 Frame fit và lý do: Frame 48 (Frame neo, điểm tập trung đủ dày để fit L/W/H).
 L / W / H (m): 3.97 / 1.92 / 1.62
-Keyframe quan trọng và lý do: Frame 48 (fit ban đầu) và các đoạn xe dịch chuyển (có tổng cộng 58 keyframes).
+Keyframe quan trọng và lý do: Có tổng cộng 64 keyframes (chỉnh tay hầu hết các frame để đảm bảo theo sát xe và giữ cố định L/W/H gốc).
 Đã bấm F qua đủ frame 0–65 (có/không): Có
 Đoạn thưa / che khuất / dễ nhầm identity: Các frame ở xa hoặc góc khuất (giữ nguyên L/W/H gốc).
 
 SELF-QC (từ qc_tracks.csv / qc_flags.csv)
-Lần QC đầu — cờ của track J01 (loại, frame): Không có cờ cảnh báo (0 flags).
-Quyết định cho từng cờ (sửa / giữ vì hợp lệ / chưa đủ evidence) và lý do: Giữ nguyên vì hợp lệ, tool không báo lỗi (L/W/H drift = 0).
-Đã sửa gì sau QC đầu; QC cuối còn cờ nào: Không cần sửa.
+Lần QC đầu — cờ của track J01 (loại, frame): Cờ `no_interpolation` ở frame 0 (do 64/66 frame là keyframe).
+Quyết định cho từng cờ (sửa / giữ vì hợp lệ / chưa đủ evidence) và lý do: Giữ vì hợp lệ. Do đã chỉnh tay thủ công đa số các frame để giữ kích thước không bị drift (L/W/H drift = 0.0), nên tool báo ít nội suy.
+Đã sửa gì sau QC đầu; QC cuối còn cờ nào: Cờ `no_interpolation` vẫn giữ (do cách làm thủ công kĩ).
 Nhận xét của bạn cùng cặp và bạn đồng ý/không đồng ý vì sao: [Bạn có thể tự điền thêm nếu cần]
 
 CAMERA–LIDAR (overlay trên image_1)
